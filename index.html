@@ -16,9 +16,14 @@
     	var obesityDataArray = [];
     	
     	for(var i=0; i<obesityData.length; i++){
-    		
-    		console.log(obesityData[i]);
+    	
+    		var myItem = [];
+    		myItem.push(obesityData[i].year);
+    		myItem.push(obesityData[i].percent);
+    		obesityDataArray.push(myItem);
     	}
+		
+		console.log(obesityDataArray)
 
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');
