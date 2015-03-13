@@ -1,4 +1,4 @@
-var myData = [{
+var obesityData = [{
 	"bmicat3" : "Under/normal weight",
 	"numerator" : 4047,
 	"denominator" : 8818,
