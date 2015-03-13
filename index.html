@@ -5,13 +5,20 @@
     
           <div id="ex0"></div> 
 
-
+	<script type="text/javascript" src="data.js"></script>
     <script type="text/javascript">
   
        google.load('visualization', '1', {packages: ['corechart']});
     google.setOnLoadCallback(drawChart);
 
     function drawChart() {
+    	
+    	var obesityDataArray = [];
+    	
+    	for(var i=0; i<obesityData.length; i++){
+    		
+    		console.log(obesityData[i]);
+    	}
 
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');
